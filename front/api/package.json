@@ -1,0 +1,8 @@
+{
+  "name": "cleemy-api",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "json-server": "^0.16.2",
+    "uuid": "^8.3.1"
+  }
+}

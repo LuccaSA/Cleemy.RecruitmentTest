@@ -22,13 +22,25 @@ Envoyez-nous vos prouesses versionnées (repo public ou privé github, gitlab...
 Si le projet est concluant, on vous rappelle pour discuter de vos choix techniques et évoquer votre avenir chez Lucca.
 
 ## API des dépenses
-Vous devrez travailler avec l'API des dépenses disponibles à l'adresse suivante :
 
-https://mobile.ilucca-dev.net/api/expenseItems
+Une API des dépenses est fournie. Pour cela il suffit de lancer cette ligne de commande :
+
+```
+> node api/server.js
+```
+
+Vous pouvez aussi ajouter cette ligne dans la section `scripts` de votre fichier `package.json`
+
+```
+"script": {
+    ...
+    "api": "node api/server.js"
+}
+```
+
+### CORS
 
 
-### Authentification
-Chaque appel à l'API doit être authentifié. Pour cela, il suffit de spécifier le header Authorization avec pour valeur Bearer {token} (où {token} vous aura été transmis par email). Vous n'avez ainsi pas besoin d'implémenter une page d'authentification.
 
 ### ExpenseItem
 La ressource ExpenseItem correspond à une dépense.
@@ -55,7 +67,7 @@ Exemple de dépense :
 ```
 
 Zoom sur les propriétés :
-- `id` (`Guid`) : identifiant unique de la dépense
+- `id` (`uuid`) : identifiant unique de la dépense
 - `purchasedOn` (`Date`) : date de la dépense
 - `nature` (`String`) : type de la dépense (comme "Restaurant", "Hôtel", "Parking", etc). Le champ est limité à 120 caractères
 - `originalAmount` (`Amount`) : montant et devise de la dépense d'origine. Par exemple, si vous faites une dépense en Angleterre, il s'agit du montant en livre sterling (GBP). La devise est limitée aux valeurs suivantes : CHF, EUR, GBP et USD
@@ -77,13 +89,13 @@ Par exemple, pour récupérer toutes les dépenses créées depuis le 05/12/2018
 
 #### Pagination
 La pagination s'effectue avec deux paramètres :
-- `offset=x` : pour sauter `x` éléments
-- `limit=y` : pour limiter le nombre de résultat à `y`. La valeur par défaut est de 10 et la valeur maximale est de 50
+- `_page=x` : pour obtenir la `x` ième page
+- `_limit=y` : pour définir le nombre d'éléments dans une page
 
-Par exemple, pour sauter les 20 premières dépenses, et limiter le nombre de résultats à 10, il faut faire l'appel suivant :
-`GET /api/expenseItems?offset=20&limit=10`.
+Par exemple, pour acceder à la 2eme page (chaque page contenant 10 éléments) :
+`GET /api/expenseItems?_page=2&_limit=10`.
 
-Le JSON de retour contient la propriété `count` qui indique le nombre total de dépenses correspondant au filtre, peu importe la pagination.
+Le nombre total d'éléments dans la collection peut être trouvé dans la propriété `X-Total-Count` du header de la réponse.
 
 ### Création d'une dépense
 `POST` sur `/api/expenseItems` pour créer une dépense.
