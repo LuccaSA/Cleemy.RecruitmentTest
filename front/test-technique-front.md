@@ -38,10 +38,6 @@ Vous pouvez aussi ajouter cette ligne dans la section `scripts` de votre fichier
 }
 ```
 
-### CORS
-
-
-
 ### ExpenseItem
 La ressource ExpenseItem correspond à une dépense.
 
