@@ -38,7 +38,7 @@ Vous pouvez aussi ajouter cette ligne dans la section `scripts` de votre fichier
 }
 ```
 
-L'api répond ensuote sur le port `3000` : `http://localhost:3000/api/expenseItems`
+L'api répond ensuite sur le port `3000` : `http://localhost:3000/api/expenseItems`
 
 ### ExpenseItem
 La ressource ExpenseItem correspond à une dépense.
