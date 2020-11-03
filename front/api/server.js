@@ -6,6 +6,9 @@ const bodyParser = require('body-parser');
 const server = jsonServer.create();
 const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
 const middlewares = jsonServer.defaults();
+const rewriter = jsonServer.rewriter({
+    "/api/*": "/$1"
+});
 
 const db = (req, res, next) => {
     if (req.method === 'POST') {
@@ -29,6 +32,7 @@ const db = (req, res, next) => {
 }
 
 server.use(bodyParser.json());
+server.use(rewriter);
 server.use(db);
 server.use(middlewares);
 server.use(router);
