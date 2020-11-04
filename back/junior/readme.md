@@ -57,7 +57,7 @@ Les règles de validation de la dépense doivent être testées unitairement.
 
 ## Critères d'évaluation
 
-Tu seras notamment évalué sur la maintenabilité de ton code, comme la lisibilité et l'homogénéité.
+Tu seras notamment évalué sur des critères de maintenabilité de ton code, comme la lisibilité et l'homogénéité.
 
 Le but est que nous puissions facilement comprendre ton code sans que tu aies à nous l’expliquer.
 
