@@ -6,6 +6,7 @@ Le test consiste à réaliser une Single Page Application avec Angular pour sais
 L'application consistera en une page permettant d'afficher :
 - La liste des dépenses fournie par une API REST (par exemple nature de la dépense, date et montant)
 - Un formulaire pour créer ou modifier une dépense (via un drawer par exemple)
+- Une entête affichant à minima le nombre de dépenses
 
 Quelques extensions possibles pour vous démarquer :
 - Internationalisation
