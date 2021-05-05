@@ -55,6 +55,12 @@ Les règles de validation de la dépense doivent être testées unitairement.
  - Pas besoin d'authentification,
  - Aucune interface utilisateur requise.
 
+## Utilisation de librairies
+
+Comme tout développeur, nous n'aimons pas réinventer la roue, et apprécions de ce fait utiliser diverses librairies selon les besoins.
+
+Ce test permet notamment d'évaluer comment vous abordez un problème et le résolvez. Par conséquent, nous préférons que vous limitiez l'utilisation de librairies dans l'application (vous pouvez si vous le souhaitez indiquer les librairies que vous auriez aimé utiliser). C'est, bien entendu, ad libitum pour le projet avec les tests unitaires.
+
 ## Critères d'évaluation
 
 Tu seras notamment évalué sur des critères de maintenabilité de ton code, comme la lisibilité et l'homogénéité.
