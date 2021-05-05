@@ -55,9 +55,9 @@ Les règles de validation de la dépense doivent être testées unitairement (av
 
 ## Utilisation de librairies
 
-Comme tout développeur, nous n'aimons pas réinventer la roue, et apprécions de ce fait utiliser diverses librairies selon les besoins.
+Comme tout développeur, nous n'aimons pas réinventer la roue, et apprécions de ce fait utiliser diverses bibliothèques selon les besoins.
 
-Cependant ce test nous permet d'évaluer comment vous abordez un problème et le résolvez. Par conséquent, nous préférons que vous limitiez l'utilisation de librairies dans l'application (vous pouvez si vous le souhaitez indiquer les librairies que vous auriez aimé utiliser). C'est, bien entendu, ad libitum pour le projet avec les tests unitaires.
+Cependant ce test nous permet d'évaluer comment vous abordez un problème et le résolvez. Par conséquent, nous préférons que vous limitiez l'utilisation de bibliothèques dans l'application (vous pouvez si vous le souhaitez indiquer les bibliothèques que vous auriez aimé utiliser). C'est, bien entendu, ad libitum pour le projet avec les tests unitaires.
 
 ## Critères d'évaluation
 
