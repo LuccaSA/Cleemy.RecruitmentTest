@@ -61,4 +61,4 @@ Cependant ce test nous permet d'évaluer comment vous abordez un problème et le
 
 ## Critères d'évaluation
 
-Tu seras notamment évalué sur la maintenabilité de ton code : lisibilité, extensibilité, modularisation, homogénéité...
+Tu seras notamment évalué sur la maintenabilité de ton code (lisibilité, extensibilité, modularisation, homogénéité, etc), ainsi que sur ta capacité à répondre au 'cahier des charges', quitte à prendre des décisions et savoir les justifier si certains points te semblent peu clair.

@@ -67,6 +67,8 @@ Tu seras notamment évalué sur des critères de maintenabilité de ton code, co
 
 Le but est que nous puissions facilement comprendre ton code sans que tu aies à nous l’expliquer.
 
+Tu seras également évalué sur ta capacité à répondre au 'cahier des charges', quitte à prendre des décisions et savoir les justifier si certains points te semblent peu clair.
+
 Dans un second temps (lors du petit oral), tu seras amené à nous le présenter et nous expliquer les choix que tu as faits.
 
 ## Liens utiles
